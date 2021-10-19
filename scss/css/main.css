@@ -1,0 +1,187 @@
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.6rem;
+  height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  background: #020024;
+  background: linear-gradient(45deg, rgba(53, 49, 124, 0.808) 0%, rgba(0, 213, 255, 0.664) 100%);
+}
+
+.wrapper {
+  width: 100%;
+  min-width: 360px;
+  background-color: rgba(226, 252, 255, 0.26);
+  -webkit-box-shadow: 0px 0px 24px 0px #42445a;
+          box-shadow: 0px 0px 24px 0px #42445a;
+  padding: 2em;
+  border-radius: 20px;
+  border: 2px solid #000;
+}
+
+.wrapper h1 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.wrapper__form-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.wrapper__form-box label {
+  font-size: 2rem;
+  margin-bottom: 0.2em;
+  font-weight: 700;
+}
+
+.wrapper__form-box input {
+  padding: 0.8em;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.692);
+}
+
+.wrapper__form-box input:focus {
+  outline: none;
+}
+
+.wrapper__form-box-error {
+  text-align: center;
+  padding: 0.5em;
+  font-size: 1.3rem;
+  color: #790a0a;
+  visibility: hidden;
+}
+
+.wrapper .error .wrapper__form-box-error {
+  visibility: visible;
+}
+
+.wrapper__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.wrapper__buttons-clear, .wrapper__buttons-send {
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding: 0.5em;
+  border-radius: 10px;
+  width: 30%;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  background-color: #420fa1;
+  -webkit-box-shadow: 0px 0px 5px 0px #42445a;
+          box-shadow: 0px 0px 5px 0px #42445a;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+
+.wrapper__buttons-clear:hover, .wrapper__buttons-send:hover {
+  background-color: rgba(132, 184, 243, 0.808);
+}
+
+.wrapper__popup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: -1000px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  width: 90%;
+  max-width: 350px;
+  height: 200px;
+  border-radius: 20px;
+  padding: 1em;
+  background-color: rgba(56, 41, 97, 0.959);
+  -webkit-box-shadow: 0px 0px 10px 0px #42445a;
+          box-shadow: 0px 0px 10px 0px #42445a;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wrapper .show-popup {
+  top: 0;
+}
+
+.wrapper__text {
+  font-size: 1.7rem;
+  margin-bottom: 1em;
+  color: #fff;
+}
+
+.wrapper__popup-button {
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin-top: 1em;
+  padding: 0.5em;
+  border-radius: 10px;
+  width: 30%;
+  color: #fff;
+  background-color: #420fa1;
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  cursor: pointer;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+
+.wrapper__popup-button:hover {
+  background-color: rgba(132, 184, 243, 0.808);
+}
+
+@media (orientation: landscape) and (max-width: 992px) {
+  body {
+    height: 200vh;
+  }
+}
+/*# sourceMappingURL=main.css.map */

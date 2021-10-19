@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>From validator</title>
+
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="./scss/css/main.css" />
+	</head>
+	<body>
+		<main>
+			<div class="wrapper">
+				<form>
+					<h1>Register now!</h1>
+
+					<div class="wrapper__form-box">
+						<label for="username">Username:</label>
+						<input
+							type="text"
+							id="username"
+							placeholder="Enter your username"
+						/>
+						<p class="wrapper__form-box-error">error</p>
+					</div>
+
+					<div class="wrapper__form-box">
+						<label for="password">Password:</label>
+						<input
+							type="password"
+							id="password"
+							placeholder="Enter your password"
+						/>
+						<p class="wrapper__form-box-error">error</p>
+					</div>
+
+					<div class="wrapper__form-box">
+						<label for="password">Repeat password:</label>
+						<input
+							type="password"
+							id="password2"
+							placeholder="Repeat your password"
+						/>
+						<p class="wrapper__form-box-error">error</p>
+					</div>
+
+					<div class="wrapper__form-box">
+						<label for="email">E-mail adress:</label>
+						<input
+							type="email"
+							id="email"
+							placeholder="Enter your e-mail adress"
+						/>
+						<p class="wrapper__form-box-error">error</p>
+					</div>
+
+					<div class="wrapper__buttons">
+						<button class="wrapper__buttons-clear">clear</button>
+						<button class="wrapper__buttons-send">send</button>
+					</div>
+				</form>
+
+				<div class="wrapper__popup">
+					<p class="wrapper__text">The form has been successfully sent!</p>
+					<button class="wrapper__popup-button">close</button>
+				</div>
+			</div>
+		</main>
+
+		<script src="script.js"></script>
+	</body>
+</html>
