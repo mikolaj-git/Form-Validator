@@ -9,7 +9,6 @@ const email = document.querySelector('#email');
 const popup = document.querySelector('.wrapper__popup');
 const popupBtn = document.querySelector('.wrapper__popup-button');
 
-
 const checkUsername = (input) => {
 	const parent = input.parentElement;
 	const child = parent.querySelector('.wrapper__form-box-error');
@@ -21,7 +20,6 @@ const checkUsername = (input) => {
 		parent.classList.remove('error');
 	}
 };
-
 
 const checkPassword = (input) => {
 	const parent = input.parentElement;
@@ -105,8 +103,8 @@ sendBtn.addEventListener('click', (e) => {
 	sendFunction();
 });
 
-document.addEventListener('keypress', (e)=>{
-	if (e.keyCode === 13 || e.which ===13) {
+document.addEventListener('keypress', (e) => {
+	if (e.keyCode === 13 || e.which === 13) {
 		e.preventDefault();
 		checkUsername(user);
 		checkPassword(pass);
@@ -114,8 +112,7 @@ document.addEventListener('keypress', (e)=>{
 		checkEmail(email);
 		sendFunction();
 	}
-})
-
+});
 
 clearBtn.addEventListener('click', (e) => {
 	e.preventDefault();
