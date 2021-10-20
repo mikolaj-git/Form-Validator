@@ -27,9 +27,9 @@ body {
   font-size: 1.6rem;
   height: 100vh;
   font-family: 'Open Sans', sans-serif;
-  background: #23ff00;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(35, 255, 0, 0.3)), color-stop(50%, rgba(0, 255, 235, 0.5)), to(rgba(35, 255, 0, 0.3)));
-  background: linear-gradient(0deg, rgba(35, 255, 0, 0.3) 0%, rgba(0, 255, 235, 0.5) 50%, rgba(35, 255, 0, 0.3) 100%);
+  background: #3300ff;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(51, 0, 255, 0.3)), color-stop(50%, rgba(215, 255, 0, 0.5)), to(rgba(51, 0, 255, 0.3)));
+  background: linear-gradient(90deg, rgba(51, 0, 255, 0.3) 0%, rgba(215, 255, 0, 0.5) 50%, rgba(51, 0, 255, 0.3) 100%);
 }
 
 .wrapper {

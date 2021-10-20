@@ -19,12 +19,12 @@ body {
 	font-size: 1.6rem;
 	height: 100vh;
 	font-family: 'Open Sans', sans-serif;
-	background: rgb(35, 255, 0);
+	background: rgb(51, 0, 255);
 	background: linear-gradient(
-		0deg,
-		rgba(35, 255, 0, 0.3) 0%,
-		rgba(0, 255, 235, 0.5) 50%,
-		rgba(35, 255, 0, 0.3) 100%
+		90deg,
+		rgba(51, 0, 255, 0.3) 0%,
+		rgba(215, 255, 0, 0.5) 50%,
+		rgba(51, 0, 255, 0.3) 100%
 	);
 }
 
