@@ -16,6 +16,9 @@ const checkUsername = (input) => {
 	if (input.value === '' || input.value.length < 6) {
 		parent.classList.add('error');
 		child.innerText = 'Username must contain at least 6 characters';
+	} else if (input.value.length > 12) {
+		parent.classList.add('error');
+		child.innerText = 'Username can be up to 12 characters long';
 	} else {
 		parent.classList.remove('error');
 	}

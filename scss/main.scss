@@ -159,3 +159,18 @@ body {
 		height: 200vh;
 	}
 }
+
+@media (min-width: 576px) {
+	.wrapper {
+		&__popup {
+			max-width: 550px;
+			height: 300px;
+		}
+
+		&__text {
+			font-size: 2.3rem;
+			margin-bottom: 1em;
+			color: #fff;
+		}
+	}
+}

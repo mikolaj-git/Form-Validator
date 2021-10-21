@@ -185,4 +185,16 @@ body {
     height: 200vh;
   }
 }
+
+@media (min-width: 576px) {
+  .wrapper__popup {
+    max-width: 550px;
+    height: 300px;
+  }
+  .wrapper__text {
+    font-size: 2.3rem;
+    margin-bottom: 1em;
+    color: #fff;
+  }
+}
 /*# sourceMappingURL=main.css.map */
